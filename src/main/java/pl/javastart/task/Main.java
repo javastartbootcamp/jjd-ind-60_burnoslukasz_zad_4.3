@@ -1,31 +1,27 @@
 package pl.javastart.task;
 
 public class Main {
-
     public static void main(String[] args) {
-        Square square1 = new Square();
-        square1.a = 2;
-        ShapeCalculator shapeCalculator = new ShapeCalculator();
-        double v = shapeCalculator.calculateSquareArea(square1);
-        System.out.println("Square area : " + v + "m2");
+        Square square1 = new Square(2);
+        double sqArea = square1.calculateSquareArea();
+        System.out.println("Square area : " + sqArea + "m2.");
 
-        Rectangle rectangle1 = new Rectangle();
-        rectangle1.a = 2;
-        rectangle1.b = 3;
-        double v1 = shapeCalculator.calculateRectPerimeter(rectangle1);
-        System.out.println("Rectangle premiter : " + v1 + "m");
+        Triangle triangle1 = new Triangle(2, 3, 4);
+        double triaPermiter = triangle1.calculateTrianglePerimeter();
+        System.out.println("Triangle permiter " + triaPermiter + "m.");
 
-        Circle circle1 = new Circle();
-        circle1.pi = 3.14;
-        circle1.r = 1;
-        double v2 = shapeCalculator.calculateCircleArea(circle1);
-        System.out.println("Circle area : " + v2 + "m2");
+        Circle circle1 = new Circle(2, 3.14);
+        double cirArea = circle1.calculateCircleArea();
+        System.out.println("Circle area: " + cirArea + "m2.");
 
-        Triangle triangle1 = new Triangle();
-        triangle1.a = 2;
-        triangle1.b = 3;
-        triangle1.c = 4;
-        double v3 = shapeCalculator.calculateTrianglePerimeter(triangle1);
-        System.out.println("Triangle premiter : " + v3 + "m");
+        Rectangle rectangle1 = new Rectangle(2, 3);
+        double rectPremiter = rectangle1.calculateRectPerimeter();
+        System.out.println("Rectangle permiter: " + rectPremiter + "m.");
     }
 }
+
+
+
+
+
+
