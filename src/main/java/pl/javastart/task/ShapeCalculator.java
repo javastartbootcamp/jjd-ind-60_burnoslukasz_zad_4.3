@@ -6,7 +6,7 @@ public class ShapeCalculator {
     }
 
     public double calculateCircleArea(Circle circle) {
-        return circle.pi * Math.pow(circle.r, 2);
+        return Math.PI * Math.pow(circle.r, 2);
     }
 
     public double calculateTrianglePerimeter(Triangle triangle) {

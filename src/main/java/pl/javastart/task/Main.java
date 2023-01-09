@@ -10,7 +10,7 @@ public class Main {
         double triaPermiter = triangle1.calculateTrianglePerimeter();
         System.out.println("Triangle permiter " + triaPermiter + "m.");
 
-        Circle circle1 = new Circle(2, 3.14);
+        Circle circle1 = new Circle(3);
         double cirArea = circle1.calculateCircleArea();
         System.out.println("Circle area: " + cirArea + "m2.");
 
